@@ -40,6 +40,7 @@ export class HomeComponent implements OnInit {
   }
 
   handleClick($event) {
+      console.log(1);
       console.log($($event.target));
       let $tar = $($event.target);
       this.isTitle = false;
