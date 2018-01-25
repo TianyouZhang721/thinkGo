@@ -10,6 +10,9 @@ import { ShopHomeComponent } from './components/shop-home/shop-home/shop-home.co
 import { MyInfoComponent } from './components/my-info/my-info/my-info.component';
 import { LoginInputComponent } from './components/login-input/login-input/login-input.component';
 import { HomePicComponent } from './home/home-pic/home-pic.component';
+import { ShopHomeListComponent} from './components/shop-home/shop-home-list/shop-home-list.component';
+import { DesignersComponent } from './components/designer/designers/designers.component';
+
 
 export const routes: Routes = [
     {
@@ -54,6 +57,14 @@ export const routes: Routes = [
     {
       path: 'login-input',
       component : LoginInputComponent
+    },
+    {
+      path: 'shop-home-list',
+      component : ShopHomeListComponent
+    },
+    {
+      path: 'designers',
+      component: DesignersComponent
     }
 ];
 
