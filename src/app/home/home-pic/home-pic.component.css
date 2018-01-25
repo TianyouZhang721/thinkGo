@@ -4,6 +4,7 @@
     left:.3rem;
     font-size: .35rem;
     color:#fff;
+    z-index: 999;
 }
 .home_pic_img{
     width:100%;
@@ -15,11 +16,11 @@
 }
 .home_pic_title{
     position: absolute;
-    bottom: 1rem;
-    left:.3rem;
+    bottom: 1.1rem;
     font-size: .35rem;
     color:#fff;
-    padding-bottom: .6rem;
+    padding:0 .2rem;
+    padding-bottom: .2rem;
     border-bottom: 1px solid #fff;
 }
 .home_pic_title b{
@@ -31,9 +32,21 @@
     position: absolute;
     bottom: .3rem;
     left:.5rem;
+    z-index: 999;
 }
 .home_pic_footer a{
     font-size: .4rem;
     color:#fff;
     padding-right:.5rem;
 }
+
+:host ::ng-deep
+    .pic-list{
+        height: 100%;
+    }
+    .pic-swiper{
+        height: 100%;
+    }
+    .home_pic_img>img{
+        width: auto;
+    }

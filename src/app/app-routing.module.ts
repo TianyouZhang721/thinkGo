@@ -35,7 +35,7 @@ export const routes: Routes = [
         ]
       },
     {
-      path: 'home-pic',
+      path: 'home-pic/:id',
       component: HomePicComponent
     },
     {
@@ -63,7 +63,7 @@ export const routes: Routes = [
       component : ShopHomeListComponent
     },
     {
-      path: 'designers',
+      path: 'designers/:title',
       component: DesignersComponent
     }
 ];

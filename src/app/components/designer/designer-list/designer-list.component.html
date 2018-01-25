@@ -15,32 +15,13 @@
         </ul>
     </div>
     <div class="shejishi_pics">
-        <div class="sheji_pic">
-            <img src="./../../../../assets/img/shejishi/shejishi06.jpg" alt="">
+        <div class="sheji_pic" *ngFor="let item of designerList;let i=index" (click)="jumprouter(i)">
+            <img [src]="item?.src" alt="">
             <div class="sheji_title">
-                <p>箱包</p>
+                <p>{{item?.title}}</p>
             </div>
         </div>
-        <div class="sheji_pic">
-            <img src="./../../../../assets/img/shejishi/shejishi02.jpg" alt="">
-            <div class="sheji_title">
-                <p>生活家居</p>
-            </div>
-        </div>
-    </div>
-    <div class="shejishi_pics">
-        <div class="sheji_pic">
-            <img src="./../../../../assets/img/shejishi/shejishi06.jpg" alt="">
-            <div class="sheji_title">
-                <p>女装</p>
-            </div>
-        </div>
-        <div class="sheji_pic">
-            <img src="./../../../../assets/img/shejishi/shejishi02.jpg" alt="">
-            <div class="sheji_title">
-                <p>男装</p>
-            </div>
-        </div>
+        
     </div>
 
 </div>

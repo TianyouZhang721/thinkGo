@@ -43,6 +43,8 @@ export class HomeComponent implements OnInit {
       console.log(1);
       console.log($($event.target));
       let $tar = $($event.target);
+      let index = $tar.index();
+      console.log(index);
       this.isTitle = false;
       this.isFooter = false;
       $tar.css({
@@ -56,7 +58,7 @@ export class HomeComponent implements OnInit {
           'transition': 'all .3s linear'
         });
         let timer1 = setTimeout(() => {
-          this.router.navigate(['home-pic']);
+          this.router.navigate(['home-pic/'+index]);
         }, 300);
       }, 500);
   }

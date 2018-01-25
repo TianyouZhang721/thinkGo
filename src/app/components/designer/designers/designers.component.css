@@ -1,14 +1,15 @@
 .chaopai_header{
 	width:100%;
-	height:1.3rem;
+	height:.88rem;
 	background-color: #212121;
 	color:#fff;
 	text-align: center;
-	line-height: 1.3rem;
+	line-height: .88rem;
 	font-size:.36rem;
     /*padding-bottom:3em;*/
     
     position: fixed;
+    top:0;
     z-index: 999;
 }
 .chaopai_header{
@@ -27,7 +28,8 @@
 /*banner*/
 .chaopai_banner{
 	width:100%;
-	box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top:.88rem;
 }
 .chaopai_banner .chaopai_intro{
 	width:100%;

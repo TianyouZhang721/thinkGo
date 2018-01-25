@@ -7,6 +7,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 // import { LoginInputComponent } from './login-input/login-input.component';
 import { RouterModule } from '@angular/router';
 import { HomePicComponent } from './home-pic/home-pic.component';
+import { HomeShoppingComponent } from './home-shopping/home-shopping.component';
 
 
 
@@ -14,6 +15,6 @@ import { HomePicComponent } from './home-pic/home-pic.component';
   imports: [
     CommonModule,ShareModule,RouterModule,
   ],
-  declarations: [HomeComponent, LoginComponent, NavigationComponent, HomePicComponent]
+  declarations: [HomeComponent, LoginComponent, NavigationComponent, HomePicComponent, HomeShoppingComponent]
 })
 export class HomeModule { }
