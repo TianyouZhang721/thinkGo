@@ -1,80 +1,93 @@
 /* 头部 */
-#index_box>div.top_title{
-	height: .88rem;
-	position: relative;
+
+#index_box>div.top_title {
+    height: .88rem;
+    position: relative;
 }
-#index_box>div.top_title>p{
-	font-size: .34rem;
-	text-align: center;
-	line-height: .88rem;
+
+#index_box>div.top_title>p {
+    font-size: .34rem;
+    text-align: center;
+    line-height: .88rem;
 }
+
+
 /* 线 */
-#index_box>div.top_title:before{
-	content: "";
-	height: 1px;
-	width: 1.75rem;
-	/* color: #cdcdcd; */
-	background: -webkit-linear-gradient(left,#e0e0e0,#cdcdcd);
-	display: block;
-	position: absolute;
-	top: .44rem;
-	left: 1.5rem;
+
+#index_box>div.top_title:before {
+    content: "";
+    height: 1px;
+    width: 1.75rem;
+    /* color: #cdcdcd; */
+    background: -webkit-linear-gradient(left, #e0e0e0, #cdcdcd);
+    display: block;
+    position: absolute;
+    top: .44rem;
+    left: 1.5rem;
 }
-#index_box>div.top_title:after{
-	content: "";
-	height: 1px;
-	width: 1.75rem;
-	/* color: #cdcdcd; */
-	background: -webkit-linear-gradient(left,#e0e0e0,#cdcdcd);
-	display: block;
-	position: absolute;
+
+#index_box>div.top_title:after {
+    content: "";
+    height: 1px;
+    width: 1.75rem;
+    /* color: #cdcdcd; */
+    background: -webkit-linear-gradient(left, #e0e0e0, #cdcdcd);
+    display: block;
+    position: absolute;
     top: .44rem;
     right: 1.5rem;
 }
 
+
 /* 轮播图 */
-.index_banner{
-	margin-bottom: 1.08rem;
-}
-.index_banner ul{
-	overflow: hidden;
-	width: 100%;
-	display: flex;
-	display: -webkit-box;
 
-}
-.index_banner ul li{
-	width: 5.7rem;
-	height: 9.8rem;
-	/* display: inline-block; */
-	/* float: left; */
-	margin-right: .56rem;
-	flex-shrink: 0
+.index_banner {
+    margin-bottom: 1.08rem;
 }
 
-.index_banner ul li a{
-	display: block;
-}
-.index_banner ul li a img{
-	width: 100%;
+.index_banner ul {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    display: -webkit-box;
 }
 
-:host ::ng-deep 
-	.swiper-container{
-		height: 11.3rem;
-		-webkit-perspective: 1600px;
-    	perspective: 1600px;
-	}
-	.swiper-wrapper{
-		width: 100%;
-		height: 100%;
-	}
-	.swiper-slide>a{
-		display: block;
-		width: 100%;
-		height: 100%;
-		overflow: hidden;
-	}
-	.swiper-slide>a>img{
-		width: 100%;
-	}
+.index_banner ul li {
+    width: 5.7rem;
+    height: 9.8rem;
+    /* display: inline-block; */
+    /* float: left; */
+    margin-right: .56rem;
+    flex-shrink: 0
+}
+
+.index_banner ul li a {
+    display: block;
+}
+
+.index_banner ul li a img {
+    width: 100%;
+}
+
+:host ::ng-deep .swiper-container {
+    height: 11.3rem;
+    -webkit-perspective: 1600px;
+    perspective: 1600px;
+    overflow: visible;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.swiper-slide>a>img {
+    width: 100%;
+}

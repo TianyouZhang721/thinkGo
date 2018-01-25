@@ -36,16 +36,7 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    // var mySwiper = new Swiper('.swiper-container',{
-    //     effect : 'cube',
-    //     cube: {
-    //       slideShadows: false,
-    //       shadow: false,
-    //       shadowOffset: 0,
-    //       shadowScale: 0.6
-    //     }
-    //   })
-      console.log(this.bannerList)
+
   }
 
   handleClick($event) {
@@ -54,21 +45,19 @@ export class HomeComponent implements OnInit {
       this.isTitle = false;
       this.isFooter = false;
       $tar.css({
-        "transform":"scale(1.26)",
-        "transition":"all .3s linear",
+        'transform': 'scale(1.2)',
+        'transition': 'all .3s linear',
       });
-      $tar.parent().css("overflow","visible");
+      $tar.parent().css('overflow', 'visible');
       let timer = setTimeout(() => {
-        $(".index_banner").css({
-          "transform":"translateX(-108%)",
-          "transition":"all .3s linear"
-        })
+        $('.index_banner').css({
+          'transform': 'translateX(-108%)',
+          'transition': 'all .3s linear'
+        });
         let timer1 = setTimeout(() => {
           this.router.navigate(['home-pic']);
-        },300)
-        
-      },500);
-      
+        }, 300);
+      }, 500);
   }
 
 }
