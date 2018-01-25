@@ -1,0 +1,140 @@
+.input_header{
+	width:100%;
+	height:1.3rem;
+	background-color: #212121;
+	/*text-align: center;*/
+	line-height: 1.3rem;
+	font-size:.36rem;
+}
+.input_header_top{
+	text-align: center;
+	line-height: 1.3rem;
+	position: relative;
+}
+.input_header_left{
+    display: inline-block;
+    position: absolute;
+    left:.3rem;
+}
+.inpput_header_right{
+    display: inline-block;
+    position: absolute;
+    right:.3rem;
+}
+.input_header_left a{
+	display:inline-block;
+	color:#fff;
+	font-size: .38rem;
+	text-decoration: none;
+}
+.inpput_header_right a{
+	display:inline-block;
+	color:#fff;
+	font-size: .3rem;
+	text-decoration: none;
+}
+.pwd_login{
+    font-size:.38rem;
+    color:#fff;
+    display: inline-block;
+}
+.login_input_banner{
+    width:100%;
+    text-align: center;
+    position:relative;
+    margin:0 auto;
+    
+}
+.login_input_banner div{
+    width:95%;
+    margin:0 auto;
+    padding-top:.5rem;
+    /*position:absolute;
+    left:50%;
+    transform: translateX(-50%);*/
+}
+.login_input_banner form{
+    width:100%;
+    border:1px solid #8e9191;
+    border-radius:.1rem;
+    
+    
+}
+.login_input_banner form input{
+    display: block;
+    outline-style: none;
+    border:none;
+    width:100%;
+    height:1rem;
+    border-radius:.1rem;
+    padding-left:.2rem;
+}
+.login_input_banner form input:first-child{
+    border-bottom:1px solid #8e9191;
+}
+/*.login_input_banner form input:last-child{
+    margin-top:1rem;
+    background:#000;
+    color:#8e9191;
+    text-align: center;
+    border-radius:.1rem;
+}*/
+.login_input_banner #dl{
+    width:100%;
+    height:.8rem;
+    
+    margin-top:1rem;
+    background:#000;
+    color:#8e9191;
+    text-align: center;
+    border-radius:1.5rem;
+}
+.login_forget{
+    position:relative;
+}
+.login_forget div{
+    position: absolute;
+    padding-top:.5rem;
+}
+.login_forget div a{
+    text-decoration: underline;
+    color:#8e9191;
+}
+.login_forget_left{
+    left:.3rem;
+}
+.login_forget_right{
+    right:.3rem;
+}
+.login_footer{
+    width:100%;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top:5rem;
+}
+
+.login_footer div{
+    /*display: inline-block;*/
+}
+.login_all{
+    margin:0 auto;
+    margin-top:.5rem;
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+}
+.login_all div{
+    text-align: center;
+    border:1px solid red;
+    margin:0 auto;
+    width:30%;
+    /*height:.5rem;*/
+}
+.login_footer p {
+    color:#8e9191;
+    font-size: .28rem;
+}
+.login_all div a{
+    color:#8e9191;
+    font-size: .38rem;
+}

@@ -1,0 +1,186 @@
+.myinfon_header{
+    width:100%;
+    height:5.2rem;
+    background:#191c1c;
+    text-align: center;
+     margin:0 auto;
+     position: relative;
+     /* line-height:5.2rem; */
+}
+.myinfon_header a:first-child{
+    color:#fff;
+    font-size:.38rem;
+    /* float:right;
+    padding-right: .34rem; */
+    /* padding-top: .14rem; */
+    box-sizing: border-box;
+    position: absolute;
+    right: .3rem;
+    top:.2rem;
+}
+.myinfon_header>.login_btn{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.myinfon_header a#login_btn{
+    display: block;
+    width:2rem;
+    height:.7rem;
+    color:#fff;
+    font-size:.28rem;
+    text-align: center;
+    line-height:.7rem;
+    border:1px solid #8e9191;
+    border-radius: 10%;
+    margin: 0 auto;
+    margin-top: .26rem;
+    box-sizing: border-box;
+}
+.myinfon_header>b{
+    margin-top: 2.04rem;
+    text-align: center;
+    display: inline-block;
+    font-size:.28rem;
+    color:#8e9191;
+}
+
+
+.info_gz>div{
+    display: inline-block;
+}
+.info_gz>div:first-child{
+    padding-right:.5rem;
+}
+.myinfo_header_bottom{
+    margin-top:0.8rem;
+    position: absolute;
+    bottom: .9rem;
+    width: 100%;
+}
+.info_gz{
+    position: absolute;
+    left: .3rem;
+}
+.myinfon_header .bianj{
+    font-size:.28rem;
+    display: inline-block;
+    width:1.46rem;
+    height:.44rem;
+    line-height: .44rem;
+    text-align: center;
+    color:#fff;
+    border: 1px solid #8e9191;
+    border-radius: 10%;
+    margin-top: .2rem;
+    position: absolute;
+    right: .3rem;
+}
+.info_gz span{
+    font-size:.28rem;
+    color:#fff;
+}
+.info_gz b{
+    font-size:.28rem;
+    color:#8e9191;
+}
+/* banner部分 */
+.myinfo_banner{
+    margin-top:.2rem;
+}
+.myinfo_table{
+    background-color:#fff;
+    width:100%;
+    height:1.32rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+.myinfo_table:last-child{
+    border-top:0px solid transparent;
+}
+.myinfo_table li{
+    width:33.3%;
+    height:100%;
+    border-top:1px solid #c7c7c7;
+    border-left:1px solid #c7c7c7;
+    text-align: center;
+    /* line-height:1.32rem; */
+    /* border-right:0px solid transparent; */
+}
+.myinfo_table li:first-child{
+    border-left:0px solid #c7c7c7;
+}
+.myinfo_banner .myinfo_table:last-child li{
+    border-bottom:1px solid #c7c7c7;
+}
+.myinfo_table li a{
+    display: block;
+    margin-top:.28rem;
+    font-size:.32rem;
+}
+.myinfo_table li b{
+    font-weight:normal;
+}
+
+
+.info_tashuo{
+    width:100%;
+    height:.8rem;   
+    font-size:.28rem;
+    color:#c7c7c7;
+    line-height:0.8rem;
+    padding-left: .2rem;
+    
+}
+/* like部分 */
+.info_like{
+    width:100%;
+    height:.88rem;
+    line-height:.88rem;
+    font-size: .32rem;
+    padding-left: .2rem;
+    border-top:1px solid #c7c7c7;
+    border-bottom:1px solid #c7c7c7;
+    background-color:#fff;
+    position: relative;
+}
+.info_like a{
+    font-size: .32rem;
+}
+.info_like b{
+    /* float:right; */
+    position: absolute;
+    right:.3rem;
+    font-size:.28rem;
+    font-weight: normal;
+    /* padding-right: .3rem; */
+}
+
+/* 建议部分 */
+.info_jianyi{
+    margin-top:.2rem;
+}
+.info_jianyi .info_jianyi_one,.info_jianyi .info_jianyi_two{
+    width:100%;
+    height:.88rem;
+    line-height:.88rem;
+    font-size: .32rem;
+    padding-left: .2rem;
+    
+    background-color:#fff;
+}
+.info_jianyi .info_jianyi_one{
+    border-top:1px solid #c7c7c7;
+    border-bottom:1px solid #c7c7c7;
+}
+.info_jianyi .info_jianyi_two{
+    border-bottom:1px solid #c7c7c7;    
+}
+.info_jianyi b{
+    position: absolute;
+    right:.3rem;
+    font-size:.28rem;
+    font-weight: normal;
+}

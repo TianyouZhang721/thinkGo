@@ -1,0 +1,196 @@
+a{
+	text-decoration: none;
+}
+/*头部*/
+.tashuo_header{
+	width:100%;
+	height:1.3rem;
+	background-color: #212121;
+	/*text-align: center;*/
+	line-height: 1.3rem;
+	font-size:.36rem;
+}
+.tashuo_header_top{
+	/*text-align: center;*/
+	line-height: 1.3rem;
+	position: relative;
+}
+.icon-comments1,.icon-sousuo1{
+	position: absolute;
+	color:#fff;
+	font-size: .38rem;
+	text-decoration: none;
+	top: .18rem;
+}
+.icon-comments1{
+	right: .32rem;
+}
+.icon-sousuo1{
+	left: .32rem;
+}
+.tashuo_nav{
+	/*float:right;*/
+	height:1.3rem;
+	z-index: 10;
+	text-align: center;
+	position: absolute;
+	top:0px;
+	left:50%;
+	transform: translateX(-50%);
+	box-sizing: border-box;
+}
+.tashuo_nav li{
+	float:left;
+}
+
+.tashuo_nav li a{
+	color:#fff;
+	margin-right: .98rem;
+	text-decoration: none;
+}
+.tashuo_nav li:last-child a{
+	margin-right: 0;
+}
+
+/*banner部分*/
+.tashuo_banner{
+	width:100%;
+	box-sizing: border-box;
+	margin-top: .2rem;
+	background-color: #fff;
+}
+.tashuo_banner .tashuo_banner_top{
+	width:100%;
+	height:1.1rem;
+	line-height: 1rem;
+	border-bottom: 1px solid #ddd;
+	box-sizing: border-box;
+	position: relative;
+}
+.tashuo_pic{
+	float: left;
+	height: 100%;
+}
+.tashuo_banner .tashuo_banner_top img{
+	margin-left:.24rem;
+	width:.66rem;
+	border-radius: 50%;
+}
+.tashuo_text{
+	display: inline-block;
+	margin-left:.24rem;
+	float: left;
+	height: 100%;
+    padding: .15rem .2rem;
+	/*margin-top: .34rem;
+	margin-bottom: .34rem;*/
+}
+.tashuo_text h4{
+	font-size: .24rem;
+	color:#949494;
+	padding: .05rem;
+
+	/*margin-bottom: .2rem;*/
+	/*padding-top:.2rem;*/
+
+}
+.tashuo_text h4:first-child{
+	color:#000;
+	font-weight: bold;
+}
+.tashuo_guanzhu{
+	/*float:right;*/
+	/*margin-right:.26rem;*/
+	position:absolute;
+	right:.26rem;
+	height: 100%;
+	/*margin-top:.25rem;*/
+	
+}
+.tashuo_guanzhu a{
+	float:right;
+	font-size: .36rem;
+	color:#949494;
+	line-height: 1.1rem;
+}
+
+
+.tashuo_banner .tashuo_banner_all{
+	margin:0 auto;
+	width:6.82rem;
+	/*text-align: center;*/
+	margin-top:0.3rem;
+	box-sizing: border-box;
+}
+.tashuo_banner .tashuo_banner_all b{
+	font-size: .3rem;
+}
+.tashuo_banner .tashuo_banner_all img{
+	width:6.82rem;
+	height:5.12rem;
+	display: block;
+	margin:.3rem auto;
+}
+.tashuo_banner .tashuo_banner_all span{
+	font-size: .26rem;
+}
+
+
+.tashuo_banner_footer{
+	width:6.82rem;
+	margin: 0rem auto;
+    padding: .2rem 0;
+
+}
+.tashuo_banner_footer a{
+	color:#000;
+	font-size:.3rem;
+}
+.tashuo_left{
+	display: inline-block;
+}
+.icon-heart2{
+	margin-right: .76rem;
+}
+.time{
+	float:right;
+}
+
+:host ::ng-deep
+	.ant-tabs-nav-wrap{
+		width: 100%;
+		height: .88rem;
+		background-color: #000;
+		color: #fff;
+	}
+:host ::ng-deep
+	.ant-tabs-nav-scroll{
+		width: 100%;
+		height: 100%;
+	}
+:host ::ng-deep
+	.ant-tabs-nav{
+		width:30%;
+		margin:0 auto;
+		display: block;
+		height: 100%;
+		position: relative;
+	}
+:host ::ng-deep
+/* tab文字 */
+	.ant-tabs-tab{
+		margin-right: 0;
+		padding:0 .2rem !important;
+		line-height: .88rem;
+	}
+:host ::ng-deep
+	.ant-tabs-tab-active{
+		color: #00ff00 !important;
+	}
+:host ::ng-deep
+	/* 下划线 */
+	.ant-tabs-ink-bar{
+		position: absolute;
+		bottom: .15rem;
+		background-color: #00ff00;
+	}

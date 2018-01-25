@@ -1,0 +1,15 @@
+<div id="index_box">
+    <div class="top_title" *ngIf="isTitle">
+        <p>专题</p>
+    </div>
+    <swiper class="swiper-container index_banner" [config]="banner">
+        <div class="swiper-wrapper clearfix">
+            <div class="swiper-slide" (click)="handleClick($event)" *ngFor="let item of bannerList">
+                <a>
+                    <img [src]="item?.src" alt="">
+                </a>
+            </div>
+        </div>
+    </swiper>
+</div>
+<app-footer *ngIf="isFooter"></app-footer>
