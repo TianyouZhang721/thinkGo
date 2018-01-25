@@ -14,11 +14,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
 import { SwiperModule } from 'angular2-useful-swiper';
+import { TestComponent } from './components/test/test.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    TestComponent,
   ],
   imports: [
     BrowserModule,
