@@ -1,27 +1,27 @@
 <!--<div class="home_pic_all">-->
-  <a class="home_pic_top">想去</a>
-  <div class="pic-list">
+<a class="home_pic_top">想去</a>
+<div class="pic-list">
     <swiper class="pic-swiper" [config]="picList">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" *ngFor="let item of picsList[picId]">
-          <div class="home_pic_img">
-            <img [src]="item?.src" alt="">
-          </div>
-          <div class="home_pic_title">
-            <b> 质地滑爽，弹性好，抗皱又温暖，至于外观更是高雅，挺括，触感好，风格经典款</b>
-          </div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" *ngFor="let item of picsList[picId]">
+                <div class="home_pic_img">
+                    <img [src]="item?.src" alt="">
+                </div>
+                <div class="home_pic_title">
+                    <b> 质地滑爽，弹性好，抗皱又温暖，至于外观更是高雅，挺括，触感好，风格经典款</b>
+                </div>
+            </div>
+            <div class="swiper-slide swiper-no-swiping">
+                <app-home-shopping></app-home-shopping>
+            </div>
+
         </div>
-        <div class="swiper-slide swiper-no-swiping">
-          <!-- <app-home></app-home> -->
-        </div>
-        
-      </div>
-      <div class="swiper-pagination"></div>
+        <div class="swiper-pagination"></div>
     </swiper>
-  </div>
-  
-  <div class="home_pic_footer">
-    <a  class="iconfont icon-liwu2"></a>
+</div>
+
+<div class="home_pic_footer">
+    <a class="iconfont icon-liwu2"></a>
     <a class="iconfont icon-sousuo"></a>
-  </div>
+</div>
 <!--</div>-->
