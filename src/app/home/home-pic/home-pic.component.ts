@@ -1,13 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import {Router, ActivatedRoute} from '@angular/router';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-home-pic',
   templateUrl: './home-pic.component.html',
   styleUrls: ['./home-pic.component.css']
 })
-export class HomePicComponent implements OnInit {
+export class HomePicComponent implements OnInit{
   picId: number;
+  index: boolean = true;
   picsList : any = [
         [
           { pid:1,src:"assets/img/indexpic/1-1.jpg"},
@@ -37,6 +39,7 @@ export class HomePicComponent implements OnInit {
   }
   constructor(
     private route: ActivatedRoute,
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -47,6 +50,22 @@ export class HomePicComponent implements OnInit {
         console.log(this.picId);
       }
     )
+    
   }
+  yidong($event) {
+      let $tar = $($event.target);
+      let X = $event.touches[0].pageX; // 开始
+      let i = $tar.parent().parent().index();
+      if(i==this.picsList[this.picId].length-1){
+        $tar.bind("touchend",(e)=>{
+          let x = e.changedTouches[0].pageX; // 结束
+          if(X - x > 50) {
+              this.router.navigate(['home-shopping']);
+          }
+        })
+      }
+      
+  }
+
 
 }

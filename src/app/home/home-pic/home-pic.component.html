@@ -1,9 +1,9 @@
 <!--<div class="home_pic_all">-->
-<a class="home_pic_top">想去</a>
+<a class="home_pic_top" *ngIf="i!=3">想去</a>
 <div class="pic-list">
     <swiper class="pic-swiper" [config]="picList">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" *ngFor="let item of picsList[picId]">
+            <div class="swiper-slide" *ngFor="let item of picsList[picId];let i=index" (touchstart)="yidong($event)">
                 <div class="home_pic_img">
                     <img [src]="item?.src" alt="">
                 </div>
@@ -11,10 +11,6 @@
                     <b> 质地滑爽，弹性好，抗皱又温暖，至于外观更是高雅，挺括，触感好，风格经典款</b>
                 </div>
             </div>
-            <div class="swiper-slide swiper-no-swiping">
-                <app-home-shopping></app-home-shopping>
-            </div>
-
         </div>
         <div class="swiper-pagination"></div>
     </swiper>

@@ -1,3 +1,6 @@
+.shop_home{
+    background-color:#fff;
+}
 .intro_header{
     width:100%;
     height:.88rem;
@@ -9,6 +12,7 @@
     position: fixed;
     top:0;
 	z-index: 999;
+   
 }
 .intro_header{
     /*position: relative;*/
@@ -45,10 +49,13 @@
     justify-content: space-between;
     border-bottom:1px solid #ddd;
     /*position: relative;*/
-    /*margin-top: .1rem;*/
+    margin-top: .88rem;
+    position:fixed;
+    top:0;
 }
 .intro_banner{
     width:100%;
+    margin-bottom:1.1rem;
 }
 .intro_banner ul.intro_banner_header li{
     width:33.3%;
@@ -64,13 +71,30 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top:2rem;
 }
 .intro_banner .intro_banner_pics li{
-    width:50%;
-    margin-left:.24rem;
+    width:46%;
+    /*margin-left:.24rem;*/
 }
-.intro_banner .intro_banner_pics li:last-child{
-    margin-right:.24rem;
+.intro_banner .intro_banner_pics li:nth-child(odd){
+    margin-left:.2rem;
+}
+.intro_banner .intro_banner_pics li:nth-child(even){
+    margin-right:.2rem;
+}
+.intro_banner .intro_banner_pics li{
+    position: relative;
+}
+.intro_banner_pics>li>span{
+    display: inline-block;
+    width:100%;
+    /*height:.18rem;*/
+    background:-webkit-linear-gradient(left,#ddd,#fff);
+    position: absolute;
+    left:0;
+    bottom:1.2rem;
 }
 .intro_banner .intro_banner_pics li img{
     width:100%;
@@ -84,6 +108,7 @@
     display: block;
     font-weight: normal;
 }
+
 /*.intro_title a{*/
     /*font-size:.28rem;*/
 /*}*/

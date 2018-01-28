@@ -46,7 +46,7 @@ export class HomeComponent implements OnInit {
       this.isTitle = false;
       this.isFooter = false;
       $tar.css({
-        'transform': 'scale(1.15)',
+        'transform': 'scale(1.24)',
         'transition': 'all .3s linear',
       });
       $tar.parent().css('overflow', 'visible');

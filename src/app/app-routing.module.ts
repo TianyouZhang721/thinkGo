@@ -12,7 +12,8 @@ import { LoginInputComponent } from './components/login-input/login-input/login-
 import { HomePicComponent } from './home/home-pic/home-pic.component';
 import { ShopHomeListComponent} from './components/shop-home/shop-home-list/shop-home-list.component';
 import { DesignersComponent } from './components/designer/designers/designers.component';
-
+import { HomeShoppingComponent } from './home/home-shopping/home-shopping.component';
+import { ProductIntroComponent } from './components/product-intro/product-intro/product-intro.component';
 
 export const routes: Routes = [
     {
@@ -65,6 +66,14 @@ export const routes: Routes = [
     {
       path: 'designers/:title',
       component: DesignersComponent
+    },
+    {
+      path: 'home-shopping',
+      component : HomeShoppingComponent
+    },
+    {
+      path: 'product-intro',
+      component :ProductIntroComponent
     }
 ];
 

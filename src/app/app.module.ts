@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule} from './app-routing.module';
 import { HomeModule} from './home/home.module';
+import { ProductIntroModule } from './components/product-intro/product-intro.module';
 import { AppComponent } from './app.component';
 import { DesignerModule } from './components/designer/designer.module';
 import { SheSayModule } from './components/she-say/she-say.module';
@@ -36,6 +37,7 @@ import { TestComponent } from './components/test/test.component';
     MyInfoModule,
     LoginInputModule,
     HomeModule,
+    ProductIntroModule
   ],
   providers: [],
   bootstrap: [AppComponent]
