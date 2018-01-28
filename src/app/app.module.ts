@@ -9,6 +9,7 @@ import { ShopHomeModule} from './components/shop-home/shop-home.module';
 // import { ShopHomeComponent } from './components/shop-home/shop-home/shop-home.component';
 import { MyInfoModule } from './components/my-info/my-info.module';
 import { LoginInputModule } from './components/login-input/login-input.module';
+import { ProductIntroModule} from './components/product-intro/product-intro.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -36,6 +37,7 @@ import { TestComponent } from './components/test/test.component';
     MyInfoModule,
     LoginInputModule,
     HomeModule,
+    ProductIntroModule
   ],
   providers: [],
   bootstrap: [AppComponent]

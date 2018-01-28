@@ -1,0 +1,76 @@
+.intro_header{
+    width:100%;
+    height:.88rem;
+    background-color: #212121;
+    color:#fff;
+    text-align: center;
+    line-height: .88rem;
+    font-size:.36rem;
+    position: fixed;
+    top:0;
+	z-index: 999;
+   
+}
+.intro_header{
+    /*position: relative;*/
+}
+.intro_header span{
+    position:absolute;
+    top:0;
+    left:.55rem;
+}
+.intro_header span a{
+    color:#fff;
+    text-decoration: none;
+    font-size: .36rem;
+}
+/*banner区域*/
+.intro_banner{
+    width:100%;
+    /*margin-bottom:.3rem;*/
+}
+.intro_banner ul li a{
+    font-size:.28rem;
+    padding-left:.15rem;
+}
+.intro_banner .intro_banner_pics{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top:1.1rem;
+}
+.intro_banner .intro_banner_pics li{
+    width:46%;
+    /*margin-left:.24rem;*/
+}
+.intro_banner .intro_banner_pics li:nth-child(odd){
+    margin-left:.2rem;
+}
+.intro_banner .intro_banner_pics li:nth-child(even){
+    margin-right:.2rem;
+}
+.intro_banner .intro_banner_pics li{
+    position: relative;
+}
+.intro_banner_pics>li>span{
+    display: inline-block;
+    width:100%;
+    /*height:.18rem;*/
+    background:-webkit-linear-gradient(left,#ddd,#fff);
+    position: absolute;
+    left:0;
+    bottom:1.29rem;
+}
+.intro_banner .intro_banner_pics li img{
+    width:100%;
+    /*height:100%;*/
+}
+.intro_title{
+    font-size: .28rem;
+    text-align: center;
+}
+.intro_title b{
+    display: block;
+    font-weight: normal;
+}

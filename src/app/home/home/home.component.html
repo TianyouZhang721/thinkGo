@@ -4,7 +4,7 @@
     </div>
     <swiper class="swiper-container index_banner" [config]="banner">
         <div class="swiper-wrapper clearfix">
-            <div class="swiper-slide" (click)="handleClick($event)" *ngFor="let item of bannerList">
+            <div class="swiper-slide" (click)="handleClick($event)" *ngFor="let item of bannerList;let i=index" (click)="handleClick($event,i)">
                 <a>
                     <img [src]="item?.src" alt="">
                 </a>

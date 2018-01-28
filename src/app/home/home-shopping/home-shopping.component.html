@@ -1,3 +1,64 @@
-<p>
-  home-shopping works!
-</p>
+<div class="intro_header">
+  <span><a ><</a></span>
+  <p>专题精选</p>
+</div>
+<div class="intro_banner">
+  <ul class="intro_banner_pics" >
+    <li *ngFor="let item of shopIntroList">
+      <img [src]="item?.src" alt="">
+      <span>{{item.price}}</span>
+      <div class="intro_title">
+        <b>{{item.stitle}}</b>
+        <b>{{item.spec}}</b>
+        <a  class="iconfont icon-shipin">&nbsp;&nbsp;&nbsp;<span>0</span></a>
+      </div>
+    </li>
+    <!--<li>
+      <img src="./../../../assets/img/shejishi/shejishi04.jpg" alt="">
+      <span>￥199.00</span>
+      <div class="intro_title">
+        <b>两针一线</b>
+        <b>情侣鞋*休闲</b>
+        <a  class="iconfont icon-shipin">&nbsp;&nbsp;&nbsp;<span>0</span></a>
+      </div>
+    </li>
+
+    <li>
+      <img src="./../../../assets/img/shejishi/shejishi02.jpg" alt="">
+      <span>￥169.00</span>
+      <div class="intro_title">
+        <b>两针一线</b>
+        <b>情侣鞋*休闲</b>
+        <a  class="iconfont icon-shipin">&nbsp;&nbsp;&nbsp;<span>0</span></a>
+      </div>
+    </li>
+    <li>
+      <img src="./../../../assets/img/shejishi/shejishi06.jpg" alt="">
+      <span>￥120.00</span>
+      <div class="intro_title">
+        <b>两针一线</b>
+        <b>情侣鞋*休闲</b>
+        <a  class="iconfont icon-shipin">&nbsp;&nbsp;&nbsp;<span>0</span></a>
+      </div>
+    </li>
+
+    <li>
+      <img src="./../../../assets/img/shejishi/shejishi06.jpg" alt="">
+      <span>￥200.00</span>
+      <div class="intro_title">
+        <b>两针一线</b>
+        <b>情侣鞋*休闲</b>
+        <a  class="iconfont icon-shipin">&nbsp;&nbsp;&nbsp;<span>0</span></a>
+      </div>
+    </li>
+    <li>
+      <img src="./../../../assets/img/shejishi/shejishi04.jpg" alt="">
+      <span>￥359.00</span>
+      <div class="intro_title">
+        <b>两针一线</b>
+        <b>情侣鞋*休闲</b>
+        <a class="iconfont icon-shipin">&nbsp;&nbsp;&nbsp;<span>0</span></a>
+      </div>
+    </li>-->
+  </ul>
+</div>
