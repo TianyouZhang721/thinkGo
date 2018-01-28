@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProductIntroComponent } from './product-intro/product-intro.component';
+import { ShareModule } from 'app/share/share.module';
+import { ProductIntroComponent } from './product-intro.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    ShareModule
   ],
   declarations: [ProductIntroComponent]
 })

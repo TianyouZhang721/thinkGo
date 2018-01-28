@@ -43,6 +43,8 @@ export class HomeComponent implements OnInit {
       console.log(1);
       console.log($($event.target));
       let $tar = $($event.target);
+      // let index = $tar.index();
+      // console.log(index);
       this.isTitle = false;
       this.isFooter = false;
       $tar.css({
