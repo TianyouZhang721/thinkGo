@@ -50,7 +50,7 @@ export class HomePicComponent implements OnInit{
         console.log(this.picId);
       }
     )
-    
+
   }
   yidong($event) {
       let $tar = $($event.target);
