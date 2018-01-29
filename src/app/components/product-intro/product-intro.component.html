@@ -1,20 +1,20 @@
 <div class="product-intro">
-    <div class="product_intro_top column">
-        <div class="top-header" [@heroState]="scrollY > top? 'active':'inactive'">
-            <div class="productintro_return">
-                <a>返回</a>
+        <div class="top-header">
+                <div class="productintro_return">
+                    <a (click)="goback()">返回</a>
+                </div>
+                <div class="productintro_right_1">
+                    <a class="iconfont icon-liwu2"></a>
+                </div>
+                <div class="productintro_right_2">
+                    <a class="iconfont icon-liwu2"></a>
+                </div>
             </div>
-            <div class="productintro_right_1">
-                <a class="iconfont icon-liwu2"></a>
-            </div>
-            <div class="productintro_right_2">
-                <a class="iconfont icon-liwu2"></a>
-            </div>
-        </div>
-        <div class="product_banner">
             <div class="product_img">
                 <img src="./../../../assets/img/guang/guang01.jpg" alt="">
             </div>
+    <div class="product_intro_top column">
+        <div class="product_banner">
             <div class="product_title">
                 <p>多功能口袋拼色运动技能束脚长裤</p>
             </div>
@@ -50,19 +50,25 @@
             <a class="iconfont icon-liwu2"></a>
         </div>
         <div class="center_intro">
-            <a class="iconfont icon-liwu2"></a>
+            <div class="center_intro_top">
+                <a class="iconfont icon-liwu2"></a>
             <div class="center_title">
                 <span>品牌:</span>
                 <b>d.o.c.中原社</b>
             </div>
             <a class="iconfont icon-liwu2 ret"></a>
+            </div>
             <div class="intro_detail">
                 [d.o.c]是【original design od China】的缩写，其含义是【中国原创设计】，中文名称【中原社】。
             </div>
         </div>
+    </div>
+    <div class="intro_wx column">
         <div class="center_intro_weixin">
             加想去君微信:xiaoxiaoxin-mcyt，成为本君好友，超多好友福利，带你认识更多设计师哦~
         </div>
+    </div>
+    <div class="intro_like column">
         <div class="center_like">
             <div class="like_title">喜欢
                 <span>12</span>

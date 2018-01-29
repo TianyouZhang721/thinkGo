@@ -1,10 +1,11 @@
 .product-intro {
-    background-color: #ddd;
+    background-color: #f2f2f2;
 }
 
 .column {
     background-color: #fff;
     margin-bottom: .3rem;
+    padding:0 .2rem;
 }
 
 .product_intro_top {
@@ -70,26 +71,27 @@
 
 .product_title {
     font-size: .28rem;
-    margin-top: .3rem;
-    padding-left: .2rem;
+    padding-top: .2rem;
 }
 
 .product_price_like {
-    width: 95%;
-    height: .8rem;
-    /*text-align: center;*/
+    height: 1.1rem;
+    padding: .1rem 0;
     margin: 0 auto;
     position: relative;
-    margin-top: .1rem;
+    /* margin-top: .1rem; */
     border-bottom: 1px dashed darkkhaki;
 }
 
 .product_price {
     position: absolute;
     top: 0;
-    left: .2rem;
+    /* left: .2rem; */
+    padding:.1rem;
 }
-
+.product_price span{
+    padding:0.05rem 0;
+}
 .product_price span:first-child {
     display: block;
     color: darkkhaki;
@@ -97,8 +99,8 @@
 
 .product_like {
     position: absolute;
-    top: 0;
-    right: .2rem;
+    top: 0.15rem;
+    right: .3rem;
     text-align: center;
 }
 
@@ -112,9 +114,10 @@
 .product_promise {
     width: 100%;
     margin: 0 auto;
-    margin-top: .1rem;
 }
-
+.product_get{
+    padding:.15rem 0;
+}
 .product_get span {
     font-size: .28rem;
     color: darkkhaki;
@@ -128,12 +131,10 @@
 
 .product_promise {
     border-top: 1px solid #ddd;
-    padding-left: .3rem;
+    padding:.15rem 0;
 }
 
-.product_get {
-    padding-left: .3rem;
-}
+
 
 .product_promise a,
 .product_promise b {
@@ -161,16 +162,21 @@
     background-color: #fff;
 }
 
-.center_people,
+/* .center_people,
 .center_intro,
 .center_intro_weixin,
 .center_like {
     width: 96%;
     margin: 0 auto;
-}
+} */
 
 .center_people,
 .center_intro {
+    position: relative;
+}
+.center_intro_top{
+    height: .8rem;
+    line-height: .8rem;
     position: relative;
 }
 
@@ -204,20 +210,18 @@
 
 .intro_detail {
     /*padding-left:.5rem;*/
-    font-size: .28rem;
+    font-size: .28rem;    
+    padding-bottom: .2rem;
 }
 
 .center_intro_weixin {
-    margin-top: .3rem;
-    width: 98%;
+    /* margin-top: .3rem; */
     /*border: 1px solid red;*/
     font-size: .28rem;
+    padding:.15rem 0;
 }
 
-.center_like {
-    margin-top: .3rem;
-    /*border: 1px solid sandybrown;*/
-}
+
 
 .like_title {
     font-size: .28rem;
@@ -225,7 +229,9 @@
     font-weight: bold;
     margin-bottom: .1rem;
 }
-
+.center_like{
+    padding:.15rem 0;
+}
 .center_like_pic a img {
     width: .8rem;
     height: .8rem;

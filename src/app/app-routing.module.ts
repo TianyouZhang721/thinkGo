@@ -72,7 +72,7 @@ export const routes: Routes = [
       path: 'home-shopping',
       component : HomeShoppingComponent
     },{
-      path: 'product-intro',
+      path: 'product-intro/:index',
       component :ProductIntroComponent
     }
 ];

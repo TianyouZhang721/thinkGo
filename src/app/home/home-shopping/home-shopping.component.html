@@ -5,7 +5,7 @@
       </div>
       <div class="intro_banner" (touchstart)="yidong($event)">
         <ul class="intro_banner_pics" >
-          <li *ngFor="let item of shopIntroList">
+          <li *ngFor="let item of shopIntroList;let i = index" [routerLink]="['/product-intro/'+i]">
             <img [src]="item?.src" alt="">
             <span>{{item.price}}</span>
             <div class="intro_title">
