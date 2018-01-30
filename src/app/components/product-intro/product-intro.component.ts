@@ -20,8 +20,8 @@ declare let window: any;
         left: 0,
         backgroundColor: 'rgba(255, 255, 255, 1)',
       })),
-      transition('inactive => active', animate('500ms ease-in')),
-      transition('active => inactive', animate('500ms ease-out'))
+      transition('inactive <=> active', animate('500ms ease-in')),
+      transition('active <=> inactive', animate('500ms ease-out'))
     ])
   ]
 })
@@ -54,6 +54,28 @@ export class ProductIntroComponent implements OnInit {
       // 获取页面滚动的距离
       let t = document.documentElement.scrollTop || document.body.scrollTop;
       this.scrollY = t;
+      if(this.scrollY>this.top){
+        console.log(1);
+        $('.productintro_return').css({
+          'background': 'rgba(0,0,0,0)'
+        });
+        $('.productintro_right_1').css({
+          'background': 'rgba(0,0,0,0)'
+        });
+        $('.productintro_right_2').css({
+          'background': 'rgba(0,0,0,0)'
+        });
+      }else{
+        $('.productintro_return').css({
+          'background': 'rgba(0,0,0,0.5)'
+        });
+        $('.productintro_right_1').css({
+          'background': 'rgba(0,0,0,0.5)'
+        });
+        $('.productintro_right_2').css({
+          'background': 'rgba(0,0,0,0.5)'
+        });
+      }
     }
   }
   goback() {
