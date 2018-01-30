@@ -42,15 +42,14 @@
 
 .home_pic_footer a {
     font-size: .4rem;
-    color:#fff;
-    padding-right:.5rem;
+    color: #fff;
+    padding-right: .5rem;
 }
 
-:host ::ng-deep
-    .pic-list{
-        height: 100%;
-    }
-    .pic-swiper{
-        height: 100%;
-    }
-   
+:host ::ng-deep .pic-list {
+    height: 100%;
+}
+
+.pic-swiper {
+    height: 100%;
+}

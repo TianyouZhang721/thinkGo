@@ -1,5 +1,10 @@
 /* 头部 */
 
+#index_box {
+    height: 100%;
+    background-color: #fff;
+}
+
 #index_box>div.top_title {
     height: .88rem;
     position: relative;
@@ -42,7 +47,7 @@
 /* 轮播图 */
 
 .index_banner {
-    margin-bottom: 1.08rem;
+    margin-top: .2rem;
 }
 
 .index_banner ul {
@@ -70,10 +75,10 @@
 }
 
 :host ::ng-deep .swiper-container {
-    height: 11.3rem;
+    height: 10rem;
     -webkit-perspective: 1600px;
     perspective: 1600px;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .swiper-wrapper {
@@ -94,4 +99,81 @@
 
 .swiper-slide>a>img {
     width: 100%;
+    height: 100%;
+}
+
+:host ::ng-deep .banner-list .swiper-slide-shadow-left {
+    background-image: none;
+}
+
+:host ::ng-deep .banner-list .swiper-slide-shadow-right {
+    background-image: none;
+}
+
+:host ::ng-deep .banner-list .swiper-slide-prev {
+    transform: rotateY(0deg) scale(0.9) !important;
+}
+
+:host ::ng-deep .banner-list .swiper-slide-next {
+    transform: rotateY(0deg) scale(0.9) !important;
+}
+
+.home_pic_all {
+    height: 100%;
+}
+
+.home_pic_top {
+    position: absolute;
+    top: .3rem;
+    left: .3rem;
+    font-size: .35rem;
+    color: #fff;
+    z-index: 999;
+}
+
+.home_pic_img {
+    width: 100%;
+    height: 100%;
+}
+
+.home_pic_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.home_pic_title {
+    position: absolute;
+    bottom: 1.1rem;
+    font-size: .35rem;
+    color: #fff;
+    padding: 0 .2rem;
+    padding-bottom: .2rem;
+    border-bottom: 1px solid #fff;
+}
+
+.home_pic_title b {
+    font-size: .28rem;
+    color: #fff;
+    font-weight: normal;
+}
+
+.home_pic_footer {
+    position: absolute;
+    bottom: .3rem;
+    left: .5rem;
+    z-index: 999;
+}
+
+.home_pic_footer a {
+    font-size: .4rem;
+    color: #fff;
+    padding-right: .5rem;
+}
+
+:host ::ng-deep .pic-list {
+    height: 100%;
+}
+
+.pic-swiper {
+    height: 100%;
 }
