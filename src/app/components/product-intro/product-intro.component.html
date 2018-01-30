@@ -11,16 +11,22 @@
         </div>
     </div>
     <div class="product_img">
-        <img src="./../../../assets/img/guang/guang01.jpg" alt="">
+        <swiper class="img-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" *ngFor="let item of srcArr">
+                    <img [src]="item" alt="">
+                </div>
+            </div>
+        </swiper>
     </div>
-    <div class="product_intro_top column">
+    <div class="product_intro_top column" *ngFor='let item of proList[id];let i = indedx'>
         <div class="product_banner">
             <div class="product_title">
-                <p>多功能口袋拼色运动技能束脚长裤</p>
+                <p>{{item?.title}}</p>
             </div>
             <div class="product_price_like">
                 <div class="product_price">
-                    <span>￥468.00</span>
+                    <span>{{item?.price}}</span>
                     <span>邮费:10.0元</span>
                 </div>
                 <div class="product_like">
