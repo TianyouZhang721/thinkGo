@@ -1,18 +1,18 @@
 <div class="product-intro">
-        <div class="top-header">
-                <div class="productintro_return">
-                    <a (click)="goback()">返回</a>
-                </div>
-                <div class="productintro_right_1">
-                    <a class="iconfont icon-liwu2"></a>
-                </div>
-                <div class="productintro_right_2">
-                    <a class="iconfont icon-liwu2"></a>
-                </div>
-            </div>
-            <div class="product_img">
-                <img src="./../../../assets/img/guang/guang01.jpg" alt="">
-            </div>
+    <div class="top-header" [@heroState]="scrollY > top? 'active':'inactive'">
+        <div class="productintro_return">
+            <a (click)="goback()">返回</a>
+        </div>
+        <div class="productintro_right_1">
+            <a class="iconfont icon-liwu2"></a>
+        </div>
+        <div class="productintro_right_2">
+            <a class="iconfont icon-liwu2"></a>
+        </div>
+    </div>
+    <div class="product_img">
+        <img src="./../../../assets/img/guang/guang01.jpg" alt="">
+    </div>
     <div class="product_intro_top column">
         <div class="product_banner">
             <div class="product_title">
@@ -52,11 +52,11 @@
         <div class="center_intro">
             <div class="center_intro_top">
                 <a class="iconfont icon-liwu2"></a>
-            <div class="center_title">
-                <span>品牌:</span>
-                <b>d.o.c.中原社</b>
-            </div>
-            <a class="iconfont icon-liwu2 ret"></a>
+                <div class="center_title">
+                    <span>品牌:</span>
+                    <b>d.o.c.中原社</b>
+                </div>
+                <a class="iconfont icon-liwu2 ret"></a>
             </div>
             <div class="intro_detail">
                 [d.o.c]是【original design od China】的缩写，其含义是【中国原创设计】，中文名称【中原社】。

@@ -1,3 +1,12 @@
+.top-header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 1rem;
+}
+
 .product-intro {
     background-color: #f2f2f2;
 }
@@ -5,7 +14,7 @@
 .column {
     background-color: #fff;
     margin-bottom: .3rem;
-    padding:0 .2rem;
+    padding: 0 .2rem;
 }
 
 .product_intro_top {
@@ -21,8 +30,9 @@
 }
 
 .productintro_return {
-    position: fixed;
-    top: .3rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     left: .3rem;
     width: .7rem;
     height: .7rem;
@@ -33,8 +43,9 @@
 }
 
 .productintro_right_1 {
-    position: fixed;
-    top: .3rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     right: 1rem;
     width: .6rem;
     height: .6rem;
@@ -45,8 +56,9 @@
 }
 
 .productintro_right_2 {
-    position: fixed;
-    top: .3rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     right: .3rem;
     width: .6rem;
     height: .6rem;
@@ -87,11 +99,13 @@
     position: absolute;
     top: 0;
     /* left: .2rem; */
-    padding:.1rem;
+    padding: .1rem;
 }
-.product_price span{
-    padding:0.05rem 0;
+
+.product_price span {
+    padding: 0.05rem 0;
 }
+
 .product_price span:first-child {
     display: block;
     color: darkkhaki;
@@ -115,9 +129,11 @@
     width: 100%;
     margin: 0 auto;
 }
-.product_get{
-    padding:.15rem 0;
+
+.product_get {
+    padding: .15rem 0;
 }
+
 .product_get span {
     font-size: .28rem;
     color: darkkhaki;
@@ -131,10 +147,8 @@
 
 .product_promise {
     border-top: 1px solid #ddd;
-    padding:.15rem 0;
+    padding: .15rem 0;
 }
-
-
 
 .product_promise a,
 .product_promise b {
@@ -162,6 +176,7 @@
     background-color: #fff;
 }
 
+
 /* .center_people,
 .center_intro,
 .center_intro_weixin,
@@ -174,7 +189,8 @@
 .center_intro {
     position: relative;
 }
-.center_intro_top{
+
+.center_intro_top {
     height: .8rem;
     line-height: .8rem;
     position: relative;
@@ -210,7 +226,7 @@
 
 .intro_detail {
     /*padding-left:.5rem;*/
-    font-size: .28rem;    
+    font-size: .28rem;
     padding-bottom: .2rem;
 }
 
@@ -218,10 +234,8 @@
     /* margin-top: .3rem; */
     /*border: 1px solid red;*/
     font-size: .28rem;
-    padding:.15rem 0;
+    padding: .15rem 0;
 }
-
-
 
 .like_title {
     font-size: .28rem;
@@ -229,9 +243,11 @@
     font-weight: bold;
     margin-bottom: .1rem;
 }
-.center_like{
-    padding:.15rem 0;
+
+.center_like {
+    padding: .15rem 0;
 }
+
 .center_like_pic a img {
     width: .8rem;
     height: .8rem;
