@@ -75,9 +75,7 @@ export class ProductIntroComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe(
       (result:any)=>{
-        console.log(result);
         this.id=result.index;
-        console.log(this.id);
       }
     )
     this.onscroll();
@@ -85,7 +83,6 @@ export class ProductIntroComponent implements OnInit {
   }
   getArr() {
     this.srcArr = this.proList[this.id][0].src.split(',');
-    console.log(this.srcArr);
   }
   onscroll() {
     let oTop = $('.top-header')[0].offsetHeight;
@@ -95,8 +92,7 @@ export class ProductIntroComponent implements OnInit {
       // 获取页面滚动的距离
       let t = document.documentElement.scrollTop || document.body.scrollTop;
       this.scrollY = t;
-      if(this.scrollY>this.top){
-        console.log(1);
+      if (this.scrollY > this.top) {
         $('.productintro_return').css({
           'background': 'rgba(0,0,0,0)',
         });
@@ -115,22 +111,27 @@ export class ProductIntroComponent implements OnInit {
         $('.productintro_right_2>a').css({
           'color': '#000'
         });
-      }else{
+      }else {
         $('.productintro_return').css({
           'background': 'rgba(0,0,0,0.5)',
-          'color':'#fff'
         });
         $('.productintro_right_1').css({
           'background': 'rgba(0,0,0,0.5)',
-          'color':'#fff'
         });
         $('.productintro_right_2').css({
           'background': 'rgba(0,0,0,0.5)',
-          'color':'#fff'
         });
-        
+        $('.productintro_return>a').css({
+          'color': '#fff'
+        });
+        $('.productintro_right_1>a').css({
+          'color': '#fff'
+        });
+        $('.productintro_right_2>a').css({
+          'color': '#fff'
+        });
       }
-    }
+    };
   }
   goback() {
       this.location.back();

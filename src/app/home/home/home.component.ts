@@ -96,7 +96,7 @@ picId: number;
       console.log($tar);
       let X = $event.touches[0].pageX; // 开始
       let i = $tar.parent().parent().index();
-      if(i==this.picsList[this.picId].length-1){
+      if(i == this.picsList[this.picId].length-1){
         $tar.bind("touchend",(e)=>{
           let x = e.changedTouches[0].pageX; // 结束
           if(X - x > 50) {
