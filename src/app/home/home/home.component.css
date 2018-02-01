@@ -1,5 +1,10 @@
 /* 头部 */
 
+.home-index {
+    overflow: hidden;
+    height: 100%;
+}
+
 #index_box {
     height: 100%;
     background-color: #fff;

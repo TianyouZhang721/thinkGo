@@ -1,40 +1,42 @@
-<div id="index_box">
-    <div class="top_title">
-        <p>专题</p>
-    </div>
-    <div class="banner-list">
-        <swiper class="swiper-container index_banner" [config]="banner">
-            <div class="swiper-wrapper clearfix">
-                <div class="swiper-slide" *ngFor="let item of bannerList;let i=index" (click)="handleClick($event,i)">
-                    <a>
-                        <img [src]="item?.src" alt="">
-                    </a>
-                </div>
-            </div>
-        </swiper>
-    </div>
-</div>
-<div class="home_pic_all">
-    <a class="home_pic_top">想去</a>
-    <div class="pic-list">
-        <swiper class="pic-swiper" [config]="picList">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" *ngFor="let item of picsList[picId];let i=index" (touchstart)="yidong($event)">
-                    <div class="home_pic_img">
-                        <img [src]="item?.src" alt="">
-                    </div>
-                    <div class="home_pic_title">
-                        <b> 质地滑爽，弹性好，抗皱又温暖，至于外观更是高雅，挺括，触感好，风格经典款</b>
+<div class="home-index">
+    <div id="index_box">
+        <div class="top_title">
+            <p>专题</p>
+        </div>
+        <div class="banner-list">
+            <swiper class="swiper-container index_banner" [config]="banner">
+                <div class="swiper-wrapper clearfix">
+                    <div class="swiper-slide" *ngFor="let item of bannerList;let i=index" (click)="handleClick($event,i)">
+                        <a>
+                            <img [src]="item?.src" alt="">
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </swiper>
+            </swiper>
+        </div>
     </div>
+    <div class="home_pic_all">
+        <a class="home_pic_top">想去</a>
+        <div class="pic-list">
+            <swiper class="pic-swiper" [config]="picList">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" *ngFor="let item of picsList[picId];let i=index" (touchstart)="yidong($event)">
+                        <div class="home_pic_img">
+                            <img [src]="item?.src" alt="">
+                        </div>
+                        <div class="home_pic_title">
+                            <b> 质地滑爽，弹性好，抗皱又温暖，至于外观更是高雅，挺括，触感好，风格经典款</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </swiper>
+        </div>
 
-    <div class="home_pic_footer">
-        <a class="iconfont icon-liwu2"></a>
-        <a class="iconfont icon-sousuo"></a>
+        <div class="home_pic_footer">
+            <a class="iconfont icon-liwu2"></a>
+            <a class="iconfont icon-sousuo"></a>
+        </div>
     </div>
+    <app-footer *ngIf="isFooter"></app-footer>
 </div>
-<app-footer *ngIf="isFooter"></app-footer>
