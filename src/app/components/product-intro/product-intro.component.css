@@ -28,7 +28,9 @@
     font-size: .28rem;
     color: #fff;
 }
-
+.productintro_right_1 a{
+    font-size:.34rem;
+}
 .productintro_return {
     position: absolute;
     top: 50%;
@@ -53,7 +55,7 @@
     background: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     text-align: center;
-    line-height: .7rem;
+    line-height: .6rem;
     transition: all .5s;
 }
 

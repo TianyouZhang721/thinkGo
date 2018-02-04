@@ -1,3 +1,6 @@
+/* .all{
+    background-color: #ddd;
+} */
 .myinfon_header{
     width:100%;
     height:5.2rem;
@@ -27,7 +30,7 @@
 .myinfon_header a#login_btn{
     display: block;
     width:2rem;
-    height:.7rem;
+    /* height:.7rem; */
     color:#fff;
     font-size:.28rem;
     text-align: center;
@@ -37,6 +40,9 @@
     margin: 0 auto;
     margin-top: .26rem;
     box-sizing: border-box;
+}
+.login_btn b{
+    color:#8e9191;
 }
 .myinfon_header>b{
     margin-top: 2.04rem;
@@ -67,7 +73,7 @@
     font-size:.28rem;
     display: inline-block;
     width:1.46rem;
-    height:.44rem;
+    /* height:.44rem; */
     line-height: .44rem;
     text-align: center;
     color:#fff;
@@ -118,7 +124,8 @@
 .myinfo_table li a{
     display: block;
     margin-top:.28rem;
-    font-size:.32rem;
+    font-size:.36rem;
+    color:rgb(32, 24, 24);
 }
 .myinfo_table li b{
     font-weight:normal;
@@ -147,7 +154,8 @@
     position: relative;
 }
 .info_like a{
-    font-size: .32rem;
+    font-size: .36rem;
+    color:rgb(32, 24, 24);
 }
 .info_like b{
     /* float:right; */
@@ -170,6 +178,10 @@
     padding-left: .2rem;
     
     background-color:#fff;
+}
+.info_jianyi .info_jianyi_one a,.info_jianyi .info_jianyi_two a{
+    color:rgb(32, 24, 24);
+    font-size: .36rem;
 }
 .info_jianyi .info_jianyi_one{
     border-top:1px solid #c7c7c7;

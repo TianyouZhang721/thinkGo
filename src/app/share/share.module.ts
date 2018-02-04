@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './footer/footer.component';
 import { NgZorroAntdModule } from 'ng-zorro-antd';
@@ -8,7 +9,8 @@ import { SwiperModule } from 'angular2-useful-swiper';
   imports: [
     CommonModule,
     NgZorroAntdModule,
-    SwiperModule
+    SwiperModule,
+    RouterModule
   ],
   exports: [
     FooterComponent,

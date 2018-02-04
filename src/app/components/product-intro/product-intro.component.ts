@@ -34,35 +34,115 @@ export class ProductIntroComponent implements OnInit {
       [
         { 
           pid:1,
-          src:"assets/img/guang/guang01.jpg,assets/img/guang/guang02.jpg,assets/img/guang/guang03.jpg",
-          title:'多功能口袋拼接',
-          price:'￥298.00'
+          src:"assets/img/upan/u1.jpg,assets/img/upan/u2.jpg,assets/img/upan/u3.jpg",
+          title:'创意U盘',
+          price:'￥55.00'
         }
       ],
       [
         { 
           pid:2,
-          src:"assets/img/guang/guang01.jpg,assets/img/guang/guang02.jpg,assets/img/guang/guang03.jpg",
-          title:'大牌气质斗篷外套',
-          price:'￥651.00'
+          src:"assets/img/upan/u4.jpg,assets/img/upan/u5.jpg,assets/img/upan/u6.jpg",
+          title:'创意U盘',
+          price:'￥129.00'
         }
       ],
       [
         { 
           pid:3,
-          src:"assets/img/guang/guang01.jpg,assets/img/guang/guang02.jpg,assets/img/guang/guang03.jpg",
-          title:'羊绒毛衣',
-          price:'￥333.00'
+          src:"assets/img/cup/cup1.jpg,assets/img/cup/cup2.jpg,assets/img/cup/cup3.jpg",
+          title:'保温杯',
+          price:'￥120.00'
         }
       ],
       [
         { 
           pid:4,
-          src:"assets/img/guang/guang01.jpg,assets/img/guang/guang02.jpg,assets/img/guang/guang03.jpg",
-          title:'喇叭裤',
-          price:'￥295.00'
+          src:"assets/img/cup/cup4.jpg,assets/img/cup/cup5.jpg,assets/img/cup/cup6.jpg",
+          title:'保温杯',
+          price:'￥223.00'
         }
-      ]
+      ],
+      [
+        { 
+          pid:5,
+          src:"assets/img/clothes/cloth11.jpg,assets/img/clothes/cloth2.jpg,assets/img/clothes/cloth3.jpg",
+          title:'情侣/休闲',
+          price:'￥689.00'
+        }
+      ],
+      [
+        { 
+          pid:6,
+          src:"assets/img/clothes/cloth4.jpg,assets/img/clothes/cloth5.jpg,assets/img/clothes/cloth6.jpg",
+          title:'情侣/休闲',
+          price:'￥589.00'
+        }
+      ],
+      [
+        { 
+          pid:7,
+          src:"assets/img/shoes/shoe1.jpg,assets/img/shoes/shoe2.jpg,assets/img/shoes/shoe3.jpg",
+          title:'情侣/休闲',
+          price:'￥389.00'
+        }
+      ],
+      [
+        { 
+          pid:8,
+          src:"assets/img/clothes/boy1.jpg,assets/img/clothes/boy2.jpg,assets/img/clothes/boy3.jpg",
+          title:'情侣/休闲',
+          price:'￥589.00'
+        }
+      ],
+      [
+        { 
+          pid:9,
+          src:"assets/img/clothes/boy3.jpg,assets/img/clothes/boy6.jpg,assets/img/clothes/boy5.jpg",
+          title:'情侣/休闲',
+          price:'￥689.00'
+        }
+      ],  
+      [
+        { 
+          pid:10,
+          src:"assets/img/clothes/boy6.jpg,assets/img/clothes/boy7.jpg,assets/img/clothes/boy8.jpg",
+          title:'情侣/休闲',
+          price:'￥889.00'
+        }
+      ],  
+      [
+        { 
+          pid:11,
+          src:"assets/img/other/other1.jpg,assets/img/other/other4.jpg,assets/img/other/other3.jpg",
+          title:'情侣/休闲',
+          price:'￥120.00'
+        }
+      ],  
+      [
+        { 
+          pid:12,
+          src:"assets/img/other/other5.jpg,assets/img/other/other6.jpg,assets/img/other/other7.jpg",
+          title:'情侣/休闲',
+          price:'￥120.00'
+        }
+      ],  
+      [
+        { 
+          pid:13,
+          src:"assets/img/other/other9.jpg,assets/img/other/other10.jpg,assets/img/other/other11.jpg",
+          title:'情侣/休闲',
+          price:'￥1320.00'
+        }
+      ],  
+      [
+        { 
+          pid:14,
+          src:"assets/img/other/other12.jpg,assets/img/other/other15.jpg,assets/img/other/other14.jpg",
+          title:'情侣/休闲',
+          price:'￥1620.00'
+        }
+      ],
     ];
     srcArr:any;
    
