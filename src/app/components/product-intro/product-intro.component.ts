@@ -169,48 +169,49 @@ export class ProductIntroComponent implements OnInit {
     this.top = oTop;
     // console.log(oTop)
     window.onscroll = () => {
+      console.log(1);
       // 获取页面滚动的距离
       let t = document.documentElement.scrollTop || document.body.scrollTop;
       this.scrollY = t;
-      if (this.scrollY > this.top) {
-        $('.productintro_return').css({
-          'background': 'rgba(0,0,0,0)',
-        });
-        $('.productintro_right_1').css({
-          'background': 'rgba(0,0,0,0)'
-        });
-        $('.productintro_right_2').css({
-          'background': 'rgba(0,0,0,0)'
-        });
-        $('.productintro_return>a').css({
-          'color': '#000'
-        });
-        $('.productintro_right_1>a').css({
-          'color': '#000'
-        });
-        $('.productintro_right_2>a').css({
-          'color': '#000'
-        });
-      }else {
-        $('.productintro_return').css({
-          'background': 'rgba(0,0,0,0.5)',
-        });
-        $('.productintro_right_1').css({
-          'background': 'rgba(0,0,0,0.5)',
-        });
-        $('.productintro_right_2').css({
-          'background': 'rgba(0,0,0,0.5)',
-        });
-        $('.productintro_return>a').css({
-          'color': '#fff'
-        });
-        $('.productintro_right_1>a').css({
-          'color': '#fff'
-        });
-        $('.productintro_right_2>a').css({
-          'color': '#fff'
-        });
-      }
+      // if (this.scrollY > this.top) {
+      //   $('.productintro_return').css({
+      //     'background': 'rgba(0,0,0,0)',
+      //   });
+      //   $('.productintro_right_1').css({
+      //     'background': 'rgba(0,0,0,0)'
+      //   });
+      //   $('.productintro_right_2').css({
+      //     'background': 'rgba(0,0,0,0)'
+      //   });
+      //   $('.productintro_return>a').css({
+      //     'color': '#000'
+      //   });
+      //   $('.productintro_right_1>a').css({
+      //     'color': '#000'
+      //   });
+      //   $('.productintro_right_2>a').css({
+      //     'color': '#000'
+      //   });
+      // }else {
+      //   $('.productintro_return').css({
+      //     'background': 'rgba(0,0,0,0.5)',
+      //   });
+      //   $('.productintro_right_1').css({
+      //     'background': 'rgba(0,0,0,0.5)',
+      //   });
+      //   $('.productintro_right_2').css({
+      //     'background': 'rgba(0,0,0,0.5)',
+      //   });
+      //   $('.productintro_return>a').css({
+      //     'color': '#fff'
+      //   });
+      //   $('.productintro_right_1>a').css({
+      //     'color': '#fff'
+      //   });
+      //   $('.productintro_right_2>a').css({
+      //     'color': '#fff'
+      //   });
+      // }
     };
   }
   goback() {
