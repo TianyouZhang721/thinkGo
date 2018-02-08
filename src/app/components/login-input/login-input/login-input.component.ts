@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
+declare let window: any;
+
 
 @Component({
   selector: 'app-login-input',
@@ -11,5 +14,9 @@ export class LoginInputComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  getdl(){
+    var u = $("#namevalue").val();
+    var p = $("#upwdvalue").val();
+    
+  }
 }
