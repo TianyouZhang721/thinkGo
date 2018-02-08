@@ -151,6 +151,7 @@
 	/* height: 2.32rem; */
 	margin-top: .24rem;
 	overflow: hidden;
+	height: 3rem;;
 }
 .guang_lunbo ul{
 	display: flex;
@@ -164,4 +165,10 @@
 .guang_lunbo ul li a img{
 	width:100%;
 	/*height:100%;*/
+}
+.swiper-container{
+	height: 100%;
+}
+.swiper-slide>img{
+	height: 100%;
 }

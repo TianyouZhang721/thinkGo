@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shop-home.component.css']
 })
 export class ShopHomeComponent implements OnInit {
-
+  banner: SwiperOptions = {
+    slidesPerView : 3,
+    slidesPerGroup : 3,
+    freeMode : true,
+    pagination: '.swiper-pagination',
+    
+  }
   constructor() { }
 
   ngOnInit() {
